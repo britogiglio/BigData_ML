@@ -1,0 +1,9 @@
+1- reg = lm(formula = variavel1 ~ variavel 2, data = df)
+2 - observar a simetria dos resíduos; mediana deve estar próxima a zero. 
+3 - observar a significância estatística das variáveis escolhidas através do '***'
+4- observar o R quadrado: bom é acima de 0,8
+5- plot(reg) para gerar os gráficos
+6- gráfico residuals vs fitter: tem que haver dispersão normal dos resíduos ao longo do eixo X (homocedasticidade) 
+7 - gráfico normal q-q: resíduos seguem a reta normal
+8 - aplicar o shapiro test: shapiro.test(reg$residuals), onde o p-value deve ser maior que 0,05
+9- aproximar matematicamente os pontos de uma reta, usando funçao log. Se não melhorar, usar a transformação de box-cox 
